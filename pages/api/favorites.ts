@@ -12,12 +12,7 @@ export default async function handler(
   }
 
   try {
-    console.log(
-      '--------------------------- Getting current user in favorites ---------------------------'
-    );
-    const { currentUser } = await serverAuth(req);
-
-    console.log('------------ Current User ---------------', currentUser);
+    const { currentUser } = await serverAuth(req, res);
 
     const favoriteMovies = await prismadb.movie.findMany({
       where: {
