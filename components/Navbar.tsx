@@ -50,7 +50,10 @@ const Navbar = () => {
 
         `}
       >
-        <img className='h-4 lg:h-7' src='/images/logo.png' alt='logo' />
+        <div className='flex gap-2'>
+          <h2 className='text-green-300 h-12 font-semibold text-4xl'>Odin</h2>
+          <img src='/images/valknut-logo3.png' alt='logo' className='h-12' />
+        </div>
         <div className='flex-row ml-8 gap-7 hidden lg:flex'>
           <NavbarItem label='Home' />
           <NavbarItem label='Series' />
